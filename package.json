@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-remark-generic-extensions",
+  "description": "Gatsby remark plugin to use commonmark generic directive extension in markdown",
+  "version": "0.0.1",
+  "author": "arrkiin <arrkiin@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/arrkiin/gatsby-remark-generic-extensions/issues"
+  },
+  "homepage": "https://github.com/arrkiin/gatsby-remark-generic-extensions",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "remark",
+    "commonmark"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "https://github.com/arrkiin/gatsby-remark-generic-extensions",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "prepublish": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore __tests__"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "cross-env": "^5.1.4"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "remark-generic-extensions": "^1.3.0"
+  }
+}
